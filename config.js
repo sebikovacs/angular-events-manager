@@ -18,7 +18,9 @@ exports.config = {
 	
 		javascripts: {
 			defaultExtension: 'js',
-			joinTo: 'javascripts/app.js',
+			joinTo: {
+				'javascripts/app.js': /app|vendor/,
+			},
 			order: {
 				before: [
 					'vendor/jquery-1.9.1.js',

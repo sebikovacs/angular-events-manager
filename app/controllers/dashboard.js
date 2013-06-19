@@ -9,9 +9,7 @@ angular.module('app').controller('Dashboard', [
 	'$compile',
 	'data',
 	function($rootScope, $scope, $location, $filter, $compile, data) {
-
-		
-
+		$scope.events = data.GetEvents();
 	}
 ]);
 
